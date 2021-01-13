@@ -33,9 +33,11 @@
 - **PyOD**:2019年开发的专门用于异常检测的库，包含30多张算法，从经典模型到深度学习模型一应俱全，用法和Sklearn的一样。  
 - **TODS**:与PyOD类似，包含多种时间序列上的异常检测。
 ## 常用算法
-### 1.基于统计学的方法:他们假定正常的数据对象由一个统计模型产生
+### 1.基于统计学的方法:
+- **概念**：他们假定正常的数据对象由一个统计模型产生，而不遵守该模型的数据是异常点。即，利用统计学方法建立一个模型，然后考虑数据点有多大概率符合这个模型
 - **参数方法**:*假定*数据符合某一参数的分布，该分布的概率密度给出[概率密度图](https://latex.codecogs.com/svg.latex?f(x,\Theta&space;)),将数据点带入到概率密度公式，得出该数据点符合该分布的概率，概率越小，越不符合该分布，是异常点的可能性就越大。  
 example：假定输入[数据集](https://latex.codecogs.com/svg.latex?\{x^{(1)},x^{(2)},...,x^{(m)}\}),数据集中的样本符合[正态分布](https://latex.codecogs.com/svg.latex?x^{(i)}\sim&space;N(\mu&space;,\sigma&space;^{2})) ，根据样本数据可以求出[参数](https://latex.codecogs.com/svg.latex?\mu&space;,\sigma)
-https://latex.codecogs.com/svg.latex?\mu&space;=\frac{1}{m}&space;\sum_{i=1}^{m}x^{(i)}
+                                [参数一](https://latex.codecogs.com/svg.latex?\mu&space;=\frac{1}{m}&space;\sum_{i=1}^{m}x^{(i)})
+				[参数二](https://latex.codecogs.com/svg.latex?\sigma&space;^{2}=\frac{1}{m}\sum_{i=1}^{m}(x^{(i)}-\mu)^{2})
 - 非参数方法
 - HBOS
