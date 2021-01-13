@@ -34,6 +34,8 @@
 - **TODS**:与PyOD类似，包含多种时间序列上的异常检测。
 ### 6.常用算法
 #### 6.1基于统计学的方法:他们假定正常的数据对象由一个统计模型产生
-- **参数方法**:*假定*数据符合某一参数的分布，该分布的概率密度给出![](https://latex.codecogs.com/gif.latex?f(x,\Theta&space;)),将数据点带入到概率密度公式，得出该数据点符合该分布的概率，概率越小，越不符合该分布，是异常点的可能性就越大
+- **参数方法**:*假定*数据符合某一参数的分布，该分布的概率密度给出[概率密度图](https://latex.codecogs.com/svg.latex?f(x,\Theta&space;)),将数据点带入到概率密度公式，得出该数据点符合该分布的概率，概率越小，越不符合该分布，是异常点的可能性就越大。  
+example：假定输入[数据集](https://latex.codecogs.com/svg.latex?\{x^{(1)},x^{(2)},...,x^{(m)}\}),数据集中的样本符合[正态分布](https://latex.codecogs.com/svg.latex?x^{(i)}\sim&space;N(\mu&space;,\sigma&space;^{2})) ，根据样本数据可以求出[参数](https://latex.codecogs.com/svg.latex?\mu&space;,\sigma)
+https://latex.codecogs.com/svg.latex?\mu&space;=\frac{1}{m}&space;\sum_{i=1}^{m}x^{(i)}
 - 非参数方法
 - HBOS
